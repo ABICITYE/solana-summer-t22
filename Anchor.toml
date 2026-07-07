@@ -6,7 +6,8 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-solana_summer_t22 = "CRbduMFSfVvUDuChQrhjhaRD8MgoaAr5Dnyr6F3knKte"
+solana_summer_t22 = "FkaFBQKxZWYCzGqSC3xsUggiT8E9Swsopsu2gQJH3pi"
+transfer_hook = "Dszak9xWCHKeMKbNWx27u4mpo5ADFwqmC4iBS2w3bccZ"
 
 [provider]
 cluster = "localnet"

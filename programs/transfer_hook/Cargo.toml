@@ -1,0 +1,29 @@
+# ⚠️ VERSION ALIGNMENT IS THE #1 CAUSE OF BUILD FAILURES.
+# Open programs/solana-summer-t22/Cargo.toml and copy the EXACT anchor-lang
+# and anchor-spl versions it uses. Replace the versions below to match.
+# The three spl-* crates must be compatible with that anchor-spl.
+
+[package]
+name = "transfer_hook"
+version = "0.1.0"
+description = "Transfer hook extension challenge"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "transfer_hook"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { version = "1.0.2", features = ["init-if-needed"] }
+anchor-spl = { version = "1.0.2", features = ["token_2022"] }
+spl-transfer-hook-interface = "0.9.0"
+spl-tlv-account-resolution = "0.9.0"
+spl-token-2022 = { version = "6.0.0", features = ["no-entrypoint"] }
