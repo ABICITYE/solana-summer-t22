@@ -29,6 +29,8 @@ pub struct InitializeMint<'info> {
         mint::authority = authority,
         mint::token_program = token_program,
         extensions::permanent_delegate::delegate = authority,
+        extensions::transfer_hook::program_id = crate::TRANSFER_HOOK_PROGRAM_ID,
+        extensions::transfer_hook::authority = authority,
     )]
     pub mint: InterfaceAccount<'info, Mint>,
 
