@@ -4262,6 +4262,8 @@ dependencies = [
  "solana-message 3.1.0",
  "solana-signer 3.0.1",
  "solana-transaction",
+ "spl-token-2022",
+ "transfer_hook",
 ]
 
 [[package]]

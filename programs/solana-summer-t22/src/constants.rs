@@ -4,7 +4,7 @@ use anchor_lang::prelude::*;
 pub const SEED: &str = "anchor";
 
 /// Only this address is allowed to initialize a `Config`.
-pub const ADMIN: Pubkey = pubkey!("AHYic562KhgtAEkb1rSesqS87dFYRcfXb4WwWus3Zc9C");
+pub const ADMIN: Pubkey = pubkey!("7pjuYyeNyo2MxeBPeiJ8eTFJgpkSsM28wuNuQTHeHzyT");
 
 /// The transfer hook program that this mint's TransferHook extension points at.
 pub const TRANSFER_HOOK_PROGRAM_ID: Pubkey =
